@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../myResponsiveStartFolder/css"
+		},
+		{
+			"path": "../myResponsiveStartFolder/images"
+		},
+		{
+			"path": "../myResponsiveStartFolder/js"
+		},
+		{
+			"path": "../myResponsiveStartFolder/scss"
+		}
+	]
+}
