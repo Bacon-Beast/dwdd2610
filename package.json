@@ -1,0 +1,12 @@
+{
+  "name": "responsive-site",
+  "version": "1.0.0",
+  "description": "Responsive website project",
+  "scripts": {
+    "scss": "sass scss/styles.scss css/styles.min.css --style=compressed",
+    "scss:watch": "sass --watch scss/styles.scss css/styles.min.css --style=compressed"
+  },
+  "devDependencies": {
+    "sass": "^1.71.0"
+  }
+}
