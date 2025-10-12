@@ -467,3 +467,21 @@ figcaption {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
+/* Logo styles */
+header img {
+    max-width: 150px;
+    height: auto;
+}
+
+@media only screen and (min-width: 35rem) {
+    header img {
+        max-width: 200px;
+    }
+}
+
+@media only screen and (min-width: 60rem) {
+    header img {
+        max-width: 250px;
+    }
+}
