@@ -398,9 +398,8 @@ nav li.active a {
 #pageWrapper {
     position: relative;
     overflow-x: hidden;
-    min-height: 100vh;  /* fill the viewport vertically (correct) */
-    height: auto;       /* let the content expand naturally */
 }
+
 
 
 h1 {
