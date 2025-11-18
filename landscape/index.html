@@ -20,8 +20,8 @@
 <body>
     <div id="headerWrapper">
         <header>
-            <a href=""><img src="images/logo1x.png" alt="site logo" width="50" height="50" srcset="images/logo1x.png 1x, images/logo2x.png 2x, images/logo3x.png 3x"></a>
-            <a class="number" href="tel:8357073452">835-707-3452</a>
+            <a href=""><img src="images/logo1x.png" alt="site logo" width="50px" height="50px" srcset="images/logo1x.png 1x, images/logo2x.png 2x, images/logo3x.png 3x"></a>
+            <a class=number href="tel:8357073452">835-707-3452</a>
             <button id="theButton"></button>
         </header>
     </div>
@@ -51,80 +51,90 @@
 
     <div id="mainWrapper">
         <main>
-            <div class="swiper">
-                <div class="text">
-                    <p>Some of our proud work.</p>
-                </div>
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <picture>
-                            <source srcset="images/ls1small.webp" media="(max-width: 400px)">
-                            <source srcset="images/ls1med.webp" media="(max-width: 800px)">
-                            <img src="images/ls1big.webp" alt="slider" width="1200" height="500">
-                        </picture>
-                    </div>
-                    <div class="swiper-slide">
-                        <picture>
-                            <source srcset="images/ls2small.jpg" media="(max-width: 400px)">
-                            <source srcset="images/ls2med.jpg" media="(max-width: 800px)">
-                            <img src="images/ls2big.jpg" alt="slider" width="1200" height="500">
-                        </picture>
-                    </div>
-                    <div class="swiper-slide">
-                        <picture>
-                            <source srcset="images/ls3small.webp" media="(max-width: 400px)">
-                            <source srcset="images/ls3med.webp" media="(max-width: 800px)">
-                            <img src="images/ls3big.webp" alt="slider" width="1200" height="500">
-                        </picture>
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
+        <!-- image slider -->
+        <div class="swiper">
+            <div class="text">
+                <p>Some of our proud work.</p>
             </div>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <picture>
+                    <source srcset="images/ls1small.webp" media="(max-width: 400px)">
+                    <source srcset="images/ls1med.webp" media="(max-width: 800px)">
+                    <img src="images/ls1big.webp" alt="slider" width="1200" height="500">
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                    <source srcset="images/ls2small.jpg" media="(max-width: 400px)">
+                    <source srcset="images/ls2med.jpg" media="(max-width: 800px)">
+                    <img src="images/ls2big.jpg" alt="slider" width="1200" height="500">
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                    <source srcset="images/ls3small.webp" media="(max-width: 400px)">
+                    <source srcset="images/ls3med.webp" media="(max-width: 800px)">
+                    <img src="images/ls3big.webp" alt="slider" width="1200" height="500">
+                </picture>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
 
-            <h1>Services</h1>
-            <div class="services">
+           <h1>Services</h1>
+           <!-- service cards -->
+           <div class="services">
                 <section>
                     <h2>Landscape Design</h2>
                     <img src="images/design.webp" alt="design" width="700" height="400">
                     <img src="images/scallopcutout.png" alt="scallop" width="700" height="61">
                 </section>
+
                 <section>
                     <h2>Lawn Mowing</h2>
-                    <img src="images/lawnmow.png" alt="lawn mowing" width="700" height="400">
-                    <img src="images/grasscutout.png" alt="grass cutout" width="700" height="400">
+                    <img src="images/lawnmow.png" alt="design" width="700" height="400">
+                    <img src="images/grasscutout.png" alt="scallop" width="700" height="400">
                 </section>
+
                 <section>
                     <h2>Tree Removal</h2>
-                    <img src="images/treeremoval.webp" alt="tree removal" width="700" height="400">
+                    <img src="images/treeremoval.webp" alt="design" width="700" height="400">
                     <img src="images/scallopcutout.png" alt="scallop" width="700" height="61">
                 </section>
+
                 <section>
                     <h2>Planting</h2>
-                    <img src="images/planting.jpg" alt="planting" width="700" height="400">
-                    <img src="images/grasscutout.png" alt="grass cutout" width="700" height="400">
+                    <img src="images/planting.jpg" alt="design" width="700" height="400">
+                    <img src="images/grasscutout.png" alt="scallop" width="700" height="400">
                 </section>
-            </div>
+           </div>
 
-            <div class="customers">
-                <section>
-                    <img src="images/customer1.jpg" width="450" height="450" alt="customer review 1">
-                    <p>These guys came in and took care of my back yard, side yards and a little in the front. They did everything I asked and stayed to their original quote. Very professional and nice. They finished the project on time as well. I couldn't be happier with their service.</p>
-                </section>
-                <section>
-                    <img src="images/customer2.jpg" width="450" height="450" alt="customer review 2">
-                    <p>You won’t find a harder working group of workers, they showed up everyday before the allotted start time and stayed until the days scheduled work was completed. They always left the yard clean and prepped for the next day. They were polite and respectful of homes around us and I never heard any complaints from others while the work was going on. I now have a beautiful backyard!</p>
-                </section>
-            </div>
+
+          <!-- customer reviews -->
+          <div class="customers">
+            <section>
+                <img src="images/customer1.jpg" width="450" height="450" alt="customer1">
+                <p>These guys came in and took care of my back yard, side yards and a little in the front. They did everything I asked and stayed to their original quote. Very professional and nice. They finished the project on time as well. I couldn't be happier with their service.</p>
+            </section>
+            <section>
+                <img src="images/customer2.jpg" width="450" height="450" alt="customer1">
+                <p>You won’t find a harder working group of workers, they showed up everyday before the allotted start time and stayed until the days scheduled work was completed. They always left the yard clean and prepped for the next day. They were polite and respectful of homes around us and I never heard any complaints from others while the work was going on. I now have a beautiful backyard!</p>
+            </section>
+        </div>
         </main>
-    </div>
+    </div> <!-- end main wrapper -->
 
     <div id="footerWrapper">
-        <footer class="site-footer">
+        <footer>
             <p>&copy; 2025 &bull; Daniel Andrew</p>
         </footer>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 </html>
