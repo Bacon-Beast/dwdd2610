@@ -17,7 +17,6 @@ html {
  * Remove the margin in all browsers.
  */
 body {
-  min-height: 100vh;
   margin: 0;
 }
 
@@ -328,170 +327,205 @@ html {
 }
 
 body {
-  font-family: "Source Serif 4", serif;
+  font-family: "Figtree", sans-serif;
 }
 
-header {
-  display: grid;
-  grid-template-columns: 50px auto 44px;
-  -moz-column-gap: 16px;
-       column-gap: 16px;
+#headerWrapper {
+  background-color: #f1e6d2;
+  color: black;
+}
+
+#headerWrapper header {
+  display: flex;
   align-items: center;
-  padding: 0.5rem 16px;
-  border-bottom: 1px #2a2d32 solid;
-}
-header h1 {
-  color: #2a2d32;
+  gap: 10px;
+  padding-left: 1rem;
 }
 
-#hamburgerBtn {
-  width: 44px;
-  height: 44px;
-  margin: 0;
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  color: #2a2d32;
-}
-#hamburgerBtn:before {
-  content: "☰";
+#headerWrapper header img {
+  display: block;
+  width: 20px;
+  height: auto;
 }
 
 nav {
-  background-color: #894c2c;
-  width: 180px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  transform: translateX(100%);
-}
-nav ul {
-  list-style-type: none;
-  padding: 0;
+  background-color: #5e657b;
   margin: 0;
 }
-nav ul li a {
+
+#myButton::before {
+  content: "☰";
+}
+
+#myButton {
+  border: none;
+  background: none;
+  color: white;
+  font-size: 2rem;
+  padding: 0;
+  width: 44px;
+  height: 44px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+ul.menuLinks {
+  list-style-type: none;
+  margin: 8;
+  padding: 0;
+  display: none;
+}
+ul.menuLinks li a {
+  color: white;
   display: block;
-  padding: 0.9rem 0.5rem;
-  text-align: right;
-  border-bottom: 1px #2a2d32 solid;
+  padding: 0.75rem 16px;
   text-decoration: none;
-  color: #e7e1d5;
 }
-nav ul li a:hover {
-  background-color: #87908f;
-}
-nav li.active a {
-  color: #2a2d32;
-  font-weight: 500;
+ul.menuLinks li.active a {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
-.moveOver #hamburgerBtn::before {
-  content: "✕";
+ul.open.menuLinks {
+  display: block;
 }
 
-.moveOver > .content {
-  transform: translateX(-180px);
-  transition: transform 500ms ease;
+#myButton.open::before {
+  content: "x";
 }
 
-#pageWrapper {
-  position: relative;
-  overflow-x: hidden;
+main h2 {
+  padding: 0 16px;
 }
 
-h1 {
-  padding-left: 16px;
+div.allCards {
+  padding: 0 16px;
 }
-
-#cards section {
-  display: grid;
-  grid-template-areas: "img" "name" "address" "phone";
-  padding: 16px;
-}
-#cards img {
-  grid-area: img;
-  width: 100%;
-  height: auto;
+div.allCards section {
+  border: 1px solid #210706;
   border-radius: 10px;
+  overflow: hidden;
+  margin: 1rem 0;
 }
-#cards h2 {
-  grid-area: name;
-  color: #894c2c;
+div.allCards section h2, div.allCards section p, div.allCards section img {
+  margin: 0;
+  padding: 1rem 16px;
 }
-#cards address {
-  grid-area: address;
-  padding-bottom: 0.25rem;
-}
-#cards a {
-  grid-area: phone;
-  text-decoration: none;
+div.allCards section h2 {
+  background-color: #891d1a;
+  font-size: 1.5rem;
   text-align: center;
   color: white;
-  background-color: #87908f;
-  padding: 0.5rem;
-  border-radius: 10px;
-  align-items: center;
+}
+div.allCards section img {
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+div.allCards section a {
+  display: block;
+  background-color: #5e657b;
+  padding: 0.75rem;
+  text-align: center;
+  margin: 0 3rem 1rem 3rem;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
 }
 
 #footerWrapper {
-  background-color: #894c2c;
-  text-align: center;
+  background-color: #f1e6d2;
+}
+
+footer {
+  padding: 0.5rem 16px;
+  background-color: #f1e6d2;
+}
+footer section.contact p {
+  margin: 0.5rem;
+}
+footer section.contact p a {
+  color: black;
+}
+footer section.contact ion-icon {
+  color: #891d1a;
+  padding-right: 5px;
+}
+footer section.social {
+  display: flex;
+  justify-content: center;
+}
+footer section.social a {
+  display: block;
+  border: solid 1px #210706;
+  margin: 0.5rem;
   padding: 0.5rem;
-  color: white;
-  font-weight: 200;
+  color: #891d1a;
+}
+footer section.social a:hover {
+  background-color: rgba(137, 29, 26, 0.3);
+}
+footer p.legal {
+  margin: 0;
+  font-weight: 300;
+  text-align: center;
 }
 
 @media only screen and (min-width: 35rem) {
-  #cards section {
-    grid-template-areas: "img name" "img address" "img phone";
-    -moz-column-gap: 8px;
-         column-gap: 8px;
-    grid-template-columns: 250px auto;
-  }
-  #cards img {
-    width: 250px;
+  #headerWrapper header img {
+    display: block;
+    width: 30px;
     height: auto;
   }
-  #cards h2 {
-    margin-top: 0;
+  div.allCards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  div.allCards section {
+    flex-basis: calc(50% - 8px);
+  }
+  footer div {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
   }
 }
 @media only screen and (min-width: 60rem) {
-  header, nav, main {
+  header, nav, main, footer {
+    margin: 0 auto;
     max-width: 60rem;
-    margin: auto;
   }
-  #hamburgerBtn {
-    display: none;
+  #headerWrapper header img {
+    display: block;
+    width: 40px;
+    height: auto;
   }
-  .moveOver > .content {
-    transform: translateX(0px);
+  #headerWrapper {
+    padding: 0.2rem;
   }
   #navWrapper {
-    background-color: #894c2c;
+    background-color: #5e657b;
+    padding: 0.002rem;
   }
-  nav {
-    background-color: transparent;
-    position: static;
-    transform: translateX(0);
-    width: auto;
+  div.allCards section {
+    flex-basis: calc(33.333% - 10.6666666667px);
   }
-  nav ul {
+  #myButton {
+    display: none;
+  }
+  ul.menuLinks li a {
+    padding: 0.4rem 1rem;
+  }
+  ul.menuLinks, ul.menuLinks.open {
     display: flex;
-    margin-left: 16px;
+    justify-content: flex-end;
   }
-  nav ul li a {
-    padding: 0.6rem 1.5rem;
-    border: none;
+  ul.menuLinks a:hover {
+    background-color: #210706;
   }
-  #cards {
+  footer div {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  #cards img {
-    width: 250px;
-    height: auto;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
   }
 }
