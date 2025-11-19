@@ -17,6 +17,7 @@ html {
  * Remove the margin in all browsers.
  */
 body {
+  min-height: 100vh;
   margin: 0;
 }
 
