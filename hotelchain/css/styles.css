@@ -39,7 +39,7 @@ main {
 }
 #pageWrapper {
     position: relative;
-    /*height: auto; */
+    height: auto;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
