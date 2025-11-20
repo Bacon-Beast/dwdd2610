@@ -39,7 +39,6 @@ main {
 }
 #pageWrapper {
     position: relative;
-    overflow-x: hidden;
     height: auto; 
     flex-grow: 1;
     display: flex;
