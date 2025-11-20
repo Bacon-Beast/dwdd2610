@@ -162,7 +162,6 @@ h1 {
     padding: 0.5rem;
     color: white;
     font-weight: 200;
-    margin-top: auto;
 }
 /* MEDIA QUERIES (RESPONSIVENESS) */
 @media only screen and (min-width: 35rem) {
